@@ -37,6 +37,8 @@ pub fn main() void {
 
     x = 5;
     lang[2] = letters[x];
+    // std.debug.print("Lang is {c}\n", .{lang[-1]}); // cannot cast negative value -1 to unsigned integer type usize
+    // std.debug.print("Lang is {s}\n", .{lang[0]}); // this causes a huge error, zig is very helpful. here, lang[0] size is a char, but we are asking it to be printed as str size.
 
     // We want to "Program in Zig!" of course:
     std.debug.print("Program in {s}!\n", .{lang});

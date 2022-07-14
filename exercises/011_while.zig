@@ -19,9 +19,10 @@ const std = @import("std");
 
 pub fn main() void {
     var n: u32 = 2;
+    var p: u32 = 1024; // i just assigned a new var so i can get used to typing vars with full type info
 
     // Please use a condition that is true UNTIL "n" reaches 1024:
-    while (???) {
+    while (n < p) {
         // Print the current number
         std.debug.print("{} ", .{n});
 
